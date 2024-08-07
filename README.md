@@ -2,7 +2,7 @@
 
 In June 2024, a friend and I developed a superior alternative to BM-25 using a clustering approach with a k-NN algorithm. The effectiveness of this method in improving MAP was confirmed through both a paired t-test and the Wilcoxon log-rank test.
 
-This project was part of the Information Retrieval exam. Our approach was based on the paper by Lee, K. S., Croft, W. B., & Allan, J. (2008). We can summarize it in seven steps:
+This project was part of the Information Retrieval exam. Our approach was inspired by the paper by Lee, K. S., Croft, W. B., & Allan, J. (2008) titled _A deterministic resampling method using overlapping document clusters for pseudo-relevance feedback_. We can summarize it in seven steps:
 1. Initial retrieval on the whole collection.
 2. Clustering.
 3. Identification of the "dominant document" based on the clustering.
