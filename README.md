@@ -10,7 +10,8 @@ This project was part of the Information Retrieval exam. Our approach was based 
 5. Retrieval on the aggregated clusters.
 6. Query expansion based on the first result (pseudo-RF).
 7. Second retrieval on the whole collection.
-We applied this approach on an experimental collection to optimize its hyperparameters and test its effectiveness.
+
+We then applied this approach on an experimental collection to optimize its hyperparameters and test its effectiveness.
 
 We have uploaded the following files:
 - **bulk.py** and **bulk_without_stopwords.py**: Used to index the TREC collection ROBUST 2004, both with and without stopwords.
