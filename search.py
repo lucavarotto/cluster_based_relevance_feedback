@@ -1,12 +1,12 @@
 from elasticsearch import Elasticsearch as esserver
 esclient = esserver('http://localhost:9200')
-from create_DTM import QE_kNN
+from cluster_pseudo_RF import QE_kNN
 
 def searchTxt(pathInput, indexName):
 
-  for card_R in [100]:
-    for e in [25]:
-      for Lambda in [0.9]:
+  for card_R in [10,25,50,75,100]:
+    for e in [10,25,50,75,100]:
+      for Lambda in [range(0.1,1,0.1)]:
 
         file = open(pathInput, 'r')
         fileO = open(f"C:/Users/Utente/OneDrive/Universita/2023-24/IR/Progetto/Results/Test/results_{card_R}_{e}_{Lambda}_minoccurrences10.txt", 'w')
